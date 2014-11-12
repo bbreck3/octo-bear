@@ -1,0 +1,65 @@
+/* The background of all pages */
+body{
+	background-color: #33A154;
+}
+
+/*The central focus of all pages*/
+#main{
+	background-color: white;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 5px 0 5px 5px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 0px;
+}
+
+/* The box around the login fields and welcome message */
+#login_screen{
+	background-color: white;
+	font-weight:bold;
+	text-align:center;
+	padding:5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left:3px;
+	margin-right:3px;
+	border-radius: 5px;
+}
+
+/* The table containing the student and instructor login fields */
+#active, #archive, #table{
+	background-color: #E6E3CC;
+	padding:1px;
+	width:100%;
+	margin-left:auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	color: black;
+}
+
+/*Defines the table containing sidebar and main window*/
+#mainTable{ width: 100%; }
+
+/*Defines the sidebar*/
+#sidebar{ width: 10%; vertical-align: top; }
+#sidebar ul{ text-align: center; list-style-type: none; padding: 0; }
+#sidebar ul li{ margin-bottom: 20px; }
+#sidebar ul li a{ text-decoration: none; color: black; }
+#sidebar ul li a:hover{ color: #33A154; }
+
+/* The following styles manage the navbar at the top of the screen */
+ul#menu{ padding: 0; margin-bottom: 11px; text-align: right; margin-right: 0px; }
+ul#menu li{ display: inline; margin-right: 3px; }
+ul#menu li a{ background-color: white; text-decoration: none; padding: 10px 20px; color: #33A154; border-radius: 4px 4px 0 0; }
+ul#menu li a:hover{ background-color: #33A154; color: white; }
+
+
+
+
+
+
+
+
+

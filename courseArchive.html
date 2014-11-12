@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    
+    <title>
+		GradeBook
+    </title>
+    
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    
+    <nav id="nav">
+    	<ul id="menu">
+        	<li><a href="instructor.html">Home</a></li>
+            <li><a href="help_instr.html">Help</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <div id="main">
+    
+    <table id="mainTable" border=0>
+    	<tr>
+        	<td id="sidebar">
+            	<ul>
+                	<li><a href="#">Active Courses</a></li>
+                    <li><a href="#">Archived Courses</a></li>
+                    <li><a href="#">Grading Schemes</a></li>
+                </ul>
+            </td>
+    		<td>                
+                <table id="table" border=1>
+                    <tr>
+                        <th><input type="checkbox" onClick="checkAll(1)"></th>
+                        <th width="60%">Course Name</th>
+                        <th width="10%">Section #</th>
+                        <th width="10%">Number of Students</th>
+                        <th width="20%">Course ID</th>
+                    </tr>
+                    <tr>
+                    	<td><input type="checkbox"></td>
+                    	<td>BIOL 101</td>
+                        <td>001</td>
+                        <td>24</td>
+                        <td>234hfn8</td>
+                    </tr>
+                    <tr>
+                    	<td><input type="checkbox"></td>
+                    	<td>BIOL 101</td>
+                        <td>002</td>
+                        <td>103</td>
+                        <td>h685h5j</td>
+                    </tr>
+                    <tr>
+                    	<td><input type="checkbox"></td>
+                    	<td>BIOL 101</td>
+                        <td>003</td>
+                        <td>32</td>
+                        <td>dhr8fh8</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                                <input type="button" value="Restore Selected">
+                                <input type="button" value="Delete Selected">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+    	</tr>
+    </table>
+    
+    </div>
+    
+    <script src="select.js"></script>
+
+</body>
+</html>

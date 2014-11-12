@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    
+    <title>
+    	GradeBook
+    </title>
+    
+	<link rel="stylesheet" href="stylesheet.css">
+    <script src="select.js"></script>
+</head>
+
+<body>
+
+<div id="login_screen"> 
+	
+					<h1>Welcome to Gradebook!</h1><br/>
+					<h3>Please login to continue.</h3><br/><br/><br/>
+        
+        <!--Login fields. First is student on right, then instructor on left-->
+        <table id="table" border=1>
+             <tr>
+                 <td>
+                    <form name="loginStudent" method="get">
+                        
+                        Student<br/>
+                        Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"> <br/>
+                        Password:  <input type="password" name="pswd"> <br/>
+                        <input type="button" value="Submit" onClick="student()"></input>
+                        <br/>
+                        <input type="button" value="Forgot Password" onClick="newPass()"></input>
+                        
+                    </form>
+                </td>
+                
+                <td>
+                    <form name="loginInstructor" method="get">
+            
+                        Instructor<br/>
+                        Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"> <br/>
+                        Password:  <input type="password" name="pswd"> <br/>
+                        <input type="button" value="Submit" onClick="instructor()"></input>
+                        <br/>
+                        <input type="button" id="forgot" value="Forgot Password" onClick="newPass()"></input>
+                        <input type="button" id="newLogin" value="Create Account" onClick="newPass()"></input>
+                
+                    </form>
+					
+                </td>
+            </tr>
+        </table>
+		
+        <!--Donate button. Currently does nothing.-->			
+		<input type="button" value="DONATE"></input>
+                    
+	</div>
+
+</body>
+</html>
