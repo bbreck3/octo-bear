@@ -29,7 +29,7 @@ body{
 }
 
 /* The table containing the student and instructor login fields */
-#active, #archive, #table{
+.table{
 	background-color: #E6E3CC;
 	padding:1px;
 	width:100%;

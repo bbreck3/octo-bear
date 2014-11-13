@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    
+    <title>
+		GradeBook
+    </title>
+    
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    
+    <nav id="nav">
+    	<ul id="menu">
+        	<li><a href="instructor.html">Home</a></li>
+            <li><a href="help_instr.html">Help</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <div id="main">
+    
+    <table id="mainTable" border=0>
+    	<tr>
+        	<td id="sidebar">
+            	<ul>
+                	<li><a href="#">Active Courses</a></li>
+                    <li><a href="#">Archived Courses</a></li>
+                    <li><a href="#">Grading Schemes</a></li>
+                    <li><a href="#">Accounts</a></li>
+                </ul>
+            </td>
+    		<td style="vertical-align: top">
+                <h2>Accounts</h4>
+                
+                <h4 class="sectionHeader">My Account</h4>
+                Name: James Fisher <br/>
+                Status: Associate Professor <br/>
+                Email: fisherj@university.edu <br/>
+                <input type="button" value="Edit Account Information"></input>
+                
+                <h4 class="sectionHeader">Student Accounts</h4>
+                <table class="table" border=1>
+                	<tr>
+                    	<th width="10px"><input type="checkbox"></input></th>
+                        <th>Name</th>
+                        <th>Year</th>
+                        <th>Student ID</th>
+                        <th>Grade</th>
+                        <th>Course</th>
+                    </tr>
+                    <tr> <td><input type="checkbox"></input></td><td>Craig Addams</td><td>Sophomore</td><td>29720042</td><td>B</td><td>BIOL 101-001</td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Kara Fanning</td><td>Freshman</td><td>57423184</td><td>A</td><td>BIOL 101-001</td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Martha Jefferson</td><td>Sophomore</td><td>51155998</td><td>C</td><td>BIOL 101-001</td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Donald Jeffries</td><td>Junior</td><td>21895639</td><td>B</td><td>BIOL 101-001</td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>James Maybush</td><td>Freshman</td><td>36229247</td><td>B</td><td>BIOL 101-001</td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Georgia Newark</td><td>Freshman</td><td>94409676</td><td>B</td><td>BIOL 101-001</td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Victoria Notch</td><td>Freshman</td><td>80844648</td><td>B</td><td>BIOL 101-001</td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Robert Smith</td><td>Sophomore</td><td>41892212</td><td>A</td><td>BIOL 101-001</td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Eric Sutherland</td><td>Freshman</td><td>59854586</td><td>A</td><td>BIOL 101-001</td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Haley Williamson</td><td>Freshman</td><td>20773716</td><td>B</td><td>BIOL 101-001</td> </tr>
+                    <tr> 
+                    	<td colspan="6">
+                        	<input type="text" placeholder="Student Name"><input type="text" placeholder="Student ID"></input>
+                            <input type="button" value="Add Student"><input type="button" value="Delete Selected"></input>
+                        </td> 
+                    <tr>
+                </table>
+            </td>
+    	</tr>
+    </table>
+    
+    </div>
+    
+    <script src="select.js"></script>
+
+</body>
+</html>

@@ -29,14 +29,17 @@
                 	<li><a href="#">Active Courses</a></li>
                     <li><a href="#">Archived Courses</a></li>
                     <li><a href="#">Grading Schemes</a></li>
+                    <li><a href="#">Accounts</a></li>
                 </ul>
             </td>
     		<td style="vertical-align: top">
-                <h2>BIOL 101-001</h2>
+                <h2>BIOL 101-001 - Spring 2016 <input type="button" value="Change Course Name"></input></h2>
+                
+                Number of Students: 10
 				
 				<h4 class="sectionHeader">Assignments</h4>
 <!--Assignments section-->
-				<table id=table border=1 style="border-collapse: collapse">
+				<table class="table" border=1 style="border-collapse: collapse">
 					<tr>
 						<th><input type="checkbox"></input></th>
 						<th>Assignment</th>
@@ -58,15 +61,8 @@
 					</tr>
 					<tr>
 						<td width="10px"><input type="checkbox"></input></td>
-						<td>Assignment 1</td>
-						<td>
-							<select>
-								<option>Homework/Quiz</option>
-								<option>Test/Project</option>
-								<option>Midterm</option>
-								<option>Final</option>
-							</select>
-						</td>
+						<td contenteditable="true">Assignment 1</td>
+						<td>Homework/Quiz</td>
 						<td>87</td>
 						<td>98</td>
 						<td>45</td>
@@ -80,15 +76,8 @@
 					</tr>
 					<tr>
 						<td width="10px"><input type="checkbox"></input></td>
-						<td>Assignment 2</td>
-						<td>
-							<select>
-								<option>Homework/Quiz</option>
-								<option>Test/Project</option>
-								<option>Midterm</option>
-								<option>Final</option>
-							</select>
-						</td>
+						<td contenteditable="true">Assignment 2</td>
+						<td>Homework/Quiz</td>
 						<td>84</td>
 						<td>96</td>
 						<td>98</td>
@@ -102,15 +91,8 @@
 					</tr>
 					<tr>
 						<td width="10px"><input type="checkbox"></input></td>
-						<td>Assignment 3</td>
-						<td>
-							<select>
-								<option>Homework/Quiz</option>
-								<option>Test/Project</option>
-								<option>Midterm</option>
-								<option>Final</option>
-							</select>
-						</td>
+						<td contenteditable="true">Assignment 3</td>
+						<td>Homework/Quiz</td>
 						<td>65</td>
 						<td>89</td>
 						<td>84</td>
@@ -124,15 +106,8 @@
 					</tr>
 					<tr>
 						<td width="10px"><input type="checkbox"></input></td>
-						<td>Assignment 4</td>
-						<td>
-							<select>
-								<option>Homework/Quiz</option>
-								<option>Test/Project</option>
-								<option>Midterm</option>
-								<option>Final</option>
-							</select>
-						</td>
+						<td contenteditable="true">Assignment 4</td>
+						<td>Homework/Quiz</td>
 						<td>98</td>
 						<td>95</td>
 						<td>87</td>
@@ -146,15 +121,8 @@
 					</tr>
 					<tr>
 						<td width="10px"><input type="checkbox"></input></td>
-						<td>Assignment 5</td>
-						<td>
-							<select>
-								<option>Homework/Quiz</option>
-								<option>Test/Project</option>
-								<option>Midterm</option>
-								<option>Final</option>
-							</select>
-						</td>
+						<td contenteditable="true">Assignment 5</td>
+						<td>Homework/Quiz</td>
 						<td>95</td>
 						<td>56</td>
 						<td>45</td>
@@ -168,15 +136,8 @@
 					</tr>
 					<tr>
 						<td width="10px"><input type="checkbox"></input></td>
-						<td>Test 1</td>
-						<td>
-							<select>
-								<option>Homework/Quiz</option>
-								<option>Test/Project</option>
-								<option>Midterm</option>
-								<option>Final</option>
-							</select>
-						</td>
+						<td contenteditable="true">Test 1</td>
+						<td>Test/Project</td>
 						<td>95</td>
 						<td>89</td>
 						<td>78</td>
@@ -190,15 +151,8 @@
 					</tr>
 					<tr>
 						<td width="10px"><input type="checkbox"></input></td>
-						<td>Test 2</td>
-						<td>
-							<select>
-								<option>Homework/Quiz</option>
-								<option>Test/Project</option>
-								<option>Midterm</option>
-								<option>Final</option>
-							</select>
-						</td>
+						<td contenteditable="true">Test 2</td>
+						<td>Test/Project</td>
 						<td>68</td>
 						<td>89</td>
 						<td>78</td>
@@ -212,15 +166,8 @@
 					</tr>
 					<tr>
 						<td width="10px"><input type="checkbox"></input></td>
+						<td contenteditable="true">Midterm</td>
 						<td>Midterm</td>
-						<td>
-							<select>
-								<option>Homework/Quiz</option>
-								<option>Test/Project</option>
-								<option>Midterm</option>
-								<option>Final</option>
-							</select>
-						</td>
 						<td>89</td>
 						<td>78</td>
 						<td>65</td>
@@ -234,15 +181,8 @@
 					</tr>
 					<tr>
 						<td width="10px"><input type="checkbox"></input></td>
+						<td contenteditable="true">Final</td>
 						<td>Final</td>
-						<td>
-							<select>
-								<option>Homework/Quiz</option>
-								<option>Test/Project</option>
-								<option>Midterm</option>
-								<option>Final</option>
-							</select>
-						</td>
 						<td>78</td>
 						<td>89</td>
 						<td>65</td>
@@ -254,21 +194,33 @@
 						<td>92</td>
 						<td>90</td>
 					</tr>
+                    <tr>
+                    	<td colspan="13">
+                        	<input type="text" placeholder="Assignment Name"><input type="text" placeholder="Assignment Type"></input>
+                            <input type="button" value="Add Assignment"><input type="button" value="Delete Selected"><input type="button" value="Print Grading Report"></input>
+                        </td>
+                    </tr>
 				</table>
 <!--Students section-->
 				<h4 class="sectionHeader">Students</h4>
-				<table id=table border=1 style="border-collapse: collapse">
-					<tr> <td>Name</td><td>ID Number</td><td colspan="2">Grade</td> </tr>
-					<tr> <td>Craig Addams</td><td>29720042</td><td>B</td><td>82.78</td> </tr>
-					<tr> <td>Kara Fanning</td><td>57423184</td><td>A</td><td>85.48</td> </tr>
-					<tr> <td>Martha Jefferson</td><td>51155998</td><td>C</td><td>69.28</td> </tr>
-					<tr> <td>Donald Jeffries</td><td>21895639</td><td>B</td><td>81.02</td> </tr>
-					<tr> <td>James Maybush</td><td>36229247</td><td>B</td><td>78.98</td> </tr>
-					<tr> <td>Georgia Newark</td><td>94409676</td><td>B</td><td>80.26</td> </tr>
-					<tr> <td>Victoria Notch</td><td>80844648</td><td>B</td><td>83.14</td> </tr>
-					<tr> <td>Robert Smith</td><td>41892212</td><td>A</td><td>87.14</td> </tr>
-					<tr> <td>Eric Sutherland</td><td>59854586</td><td>A</td><td>87.54</td> </tr>
-					<tr> <td>Haley Williamson</td><td>20773716</td><td>B</td><td>83.12</td> </tr>
+				<table class="table" border=1 style="border-collapse: collapse">
+					<tr> <td width="10px"><input type="checkbox"></input></td><td>Name</td><td>ID Number</td><td colspan="2">Grade</td><td width="10px">Print Report</td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Craig Addams</td><td>29720042</td><td>B</td><td>82.78</td><td><input type="button" value="print"></input></td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Kara Fanning</td><td>57423184</td><td>A</td><td>85.48</td><td><input type="button" value="print"></input></td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Martha Jefferson</td><td>51155998</td><td>C</td><td>69.28</td><td><input type="button" value="print"></input></td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Donald Jeffries</td><td>21895639</td><td>B</td><td>81.02</td><td><input type="button" value="print"></input></td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>James Maybush</td><td>36229247</td><td>B</td><td>78.98</td><td><input type="button" value="print"></input></td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Georgia Newark</td><td>94409676</td><td>B</td><td>80.26</td><td><input type="button" value="print"></input></td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Victoria Notch</td><td>80844648</td><td>B</td><td>83.14</td><td><input type="button" value="print"></input></td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Robert Smith</td><td>41892212</td><td>A</td><td>87.14</td><td><input type="button" value="print"></input></td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Eric Sutherland</td><td>59854586</td><td>A</td><td>87.54</td><td><input type="button" value="print"></input></td> </tr>
+					<tr> <td><input type="checkbox"></input></td><td>Haley Williamson</td><td>20773716</td><td>B</td><td>83.12</td><td><input type="button" value="print"></input></td> </tr>
+                    <tr> 
+                    	<td colspan="6">
+                        	<input type="text" placeholder="Student ID"></input>
+                            <input type="button" value="Add To Course"><input type="button" value="Remove From Course"><input type="button" value="Print Selected Reports"></input>
+                        </td> 
+                    <tr>
 				</table>
             </td>
     	</tr>
